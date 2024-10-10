@@ -1,0 +1,106 @@
+ Starting training / evaluation
+ Downloading Data Files
+ Loading Data Files
+ Initializing Tokenizer
+ Preparing Features
+ Intializing training and validation dataset 
+ Intializing model | T5 
+***** Running training *****
+  Num examples = 876
+  Num Epochs = 20
+  Total train batch size (w. parallel & distributed) = 8
+  Steps per epoch = 109
+  Total optimization steps = 2180
+Epoch 1/20
+Sharding callback duration: 520
+Saving checkpoint at runs/checkpoint/ckpt-1
+Epoch 2/20
+Sharding callback duration: 448
+Saving checkpoint at runs/checkpoint/ckpt-2
+Epoch 3/20
+Sharding callback duration: 872
+Saving checkpoint at runs/checkpoint/ckpt-3
+Epoch 4/20
+Sharding callback duration: 593
+Saving checkpoint at runs/checkpoint/ckpt-4
+Epoch 5/20
+Sharding callback duration: 590
+Saving checkpoint at runs/checkpoint/ckpt-5
+Epoch 6/20
+Sharding callback duration: 650
+Saving checkpoint at runs/checkpoint/ckpt-6
+Epoch 7/20
+Sharding callback duration: 462
+Saving checkpoint at runs/checkpoint/ckpt-7
+Epoch 8/20
+Sharding callback duration: 487
+Saving checkpoint at runs/checkpoint/ckpt-8
+Epoch 9/20
+Sharding callback duration: 1604
+Saving checkpoint at runs/checkpoint/ckpt-9
+Epoch 10/20
+Sharding callback duration: 812
+Saving checkpoint at runs/checkpoint/ckpt-10
+Epoch 11/20
+Sharding callback duration: 446
+Saving checkpoint at runs/checkpoint/ckpt-11
+Epoch 12/20
+Sharding callback duration: 467
+Saving checkpoint at runs/checkpoint/ckpt-12
+Epoch 13/20
+Sharding callback duration: 437
+Saving checkpoint at runs/checkpoint/ckpt-13
+Epoch 14/20
+Sharding callback duration: 425
+Saving checkpoint at runs/checkpoint/ckpt-14
+Epoch 15/20
+Sharding callback duration: 649
+Saving checkpoint at runs/checkpoint/ckpt-15
+Epoch 16/20
+Sharding callback duration: 455
+Saving checkpoint at runs/checkpoint/ckpt-16
+Epoch 17/20
+Sharding callback duration: 438
+Saving checkpoint at runs/checkpoint/ckpt-17
+Epoch 18/20
+Sharding callback duration: 791
+Saving checkpoint at runs/checkpoint/ckpt-18
+Epoch 19/20
+Sharding callback duration: 1835
+Saving checkpoint at runs/checkpoint/ckpt-19
+Epoch 20/20
+Sharding callback duration: 635
+Saving checkpoint at runs/checkpoint/ckpt-20
+Training took: 0:24:15.543884
+ Saving model in runs//saved_model/
+Opening tunnel named: http-80-f22c9bc5-1701-4e74-b1cf-591883a974ee
+t=2024-09-01T10:02:59+0000 lvl=info msg="no configuration paths supplied"
+t=2024-09-01T10:02:59+0000 lvl=info msg="using configuration at default config path" path=/root/.config/ngrok/ngrok.yml
+t=2024-09-01T10:02:59+0000 lvl=info msg="open config file" path=/root/.config/ngrok/ngrok.yml err=nil
+t=2024-09-01T10:02:59+0000 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040 allow_hosts=[]
+t=2024-09-01T10:02:59+0000 lvl=eror msg="failed to reconnect session" obj=tunnels.session err="authentication failed: Usage of ngrok requires a verified account and authtoken.\n\nSign up for an account: https://dashboard.ngrok.com/signup\nInstall your authtoken: https://dashboard.ngrok.com/get-started/your-authtoken\r\n\r\nERR_NGROK_4018\r\n"
+t=2024-09-01T10:02:59+0000 lvl=eror msg="session closing" obj=tunnels.session err="authentication failed: Usage of ngrok requires a verified account and authtoken.\n\nSign up for an account: https://dashboard.ngrok.com/signup\nInstall your authtoken: https://dashboard.ngrok.com/get-started/your-authtoken\r\n\r\nERR_NGROK_4018\r\n"
+t=2024-09-01T10:02:59+0000 lvl=info msg="received stop request" obj=app stopReq="{err:{Remote:true Inner:{Inner:0xc0004cc840}} restart:false}"
+t=2024-09-01T10:02:59+0000 lvl=eror msg="terminating with error" obj=app err="authentication failed: Usage of ngrok requires a verified account and authtoken.\n\nSign up for an account: https://dashboard.ngrok.com/signup\nInstall your authtoken: https://dashboard.ngrok.com/get-started/your-authtoken\r\n\r\nERR_NGROK_4018\r\n"
+t=2024-09-01T10:02:59+0000 lvl=crit msg="command failed" err="authentication failed: Usage of ngrok requires a verified account and authtoken.\n\nSign up for an account: https://dashboard.ngrok.com/signup\nInstall your authtoken: https://dashboard.ngrok.com/get-started/your-authtoken\r\n\r\nERR_NGROK_4018\r\n"
+Updating authtoken for default "config_path" of "ngrok_path": /root/.config/ngrok/ngrok
+Opening tunnel named: http-80-bb8e216a-a26d-403c-a544-1d3844cdba05
+t=2024-09-01T10:07:59+0000 lvl=info msg="no configuration paths supplied"
+t=2024-09-01T10:07:59+0000 lvl=info msg="using configuration at default config path" path=/root/.config/ngrok/ngrok.yml
+t=2024-09-01T10:07:59+0000 lvl=info msg="open config file" path=/root/.config/ngrok/ngrok.yml err=nil
+t=2024-09-01T10:07:59+0000 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040 allow_hosts=[]
+t=2024-09-01T10:07:59+0000 lvl=info msg="client session established" obj=tunnels.session
+t=2024-09-01T10:07:59+0000 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2024-09-01T10:07:59+0000 lvl=info msg=start pg=/api/tunnels id=b445581908331b8a
+t=2024-09-01T10:07:59+0000 lvl=info msg=end pg=/api/tunnels id=b445581908331b8a status=200 dur=315.269µs
+t=2024-09-01T10:07:59+0000 lvl=info msg=start pg=/api/tunnels id=17b797cdcbf67cc8
+t=2024-09-01T10:07:59+0000 lvl=info msg=end pg=/api/tunnels id=17b797cdcbf67cc8 status=200 dur=130.267µs
+t=2024-09-01T10:07:59+0000 lvl=info msg=start pg=/api/tunnels id=97d3f7402a683e10
+t=2024-09-01T10:07:59+0000 lvl=warn msg="invalid tunnel configuration" pg=/api/tunnels id=97d3f7402a683e10 err="yaml: unmarshal errors:\n  line 1: field port not found in type config.HTTPv2Tunnel"
+t=2024-09-01T10:07:59+0000 lvl=info msg=end pg=/api/tunnels id=97d3f7402a683e10 status=400 dur=395.881µs
+Opening tunnel named: http-80-bdf28c96-cd61-4d25-a40a-f2637b598e41
+t=2024-09-01T10:08:23+0000 lvl=info msg=start pg=/api/tunnels id=18ef298be76fb732
+t=2024-09-01T10:08:23+0000 lvl=warn msg="invalid tunnel configuration" pg=/api/tunnels id=18ef298be76fb732 err="yaml: unmarshal errors:\n  line 1: field port not found in type config.HTTPv2Tunnel"
+t=2024-09-01T10:08:23+0000 lvl=info msg=end pg=/api/tunnels id=18ef298be76fb732 status=400 dur=306.989µs
+t=2024-09-01T10:10:52+0000 lvl=info msg="received stop request" obj=app stopReq="{err:<nil> restart:false}"
+t=2024-09-01T10:10:52+0000 lvl=info msg="session closing" obj=tunnels.session err=nil
